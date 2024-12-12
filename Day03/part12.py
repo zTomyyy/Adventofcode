@@ -1,5 +1,10 @@
+import os
+
+script_dir = os.path.dirname(__file__)
+file_path = os.path.join(script_dir, "input.txt")
+
 #Read input data
-with open('input.txt', 'r') as file:
+with open(file_path, 'r') as file:
   data = file.read()
 
 print(data)

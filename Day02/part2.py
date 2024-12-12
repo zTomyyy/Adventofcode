@@ -1,3 +1,8 @@
+import os
+
+script_dir = os.path.dirname(__file__)
+file_path = os.path.join(script_dir, "input.txt")
+
 #Function for checking if Safe (Returns T/F)
 def check(data):
   # Ermitteln der Richtung (1: steigend, 0: fallend)
@@ -35,7 +40,7 @@ def checkifdamper(data):
 
 #Read input data
 data = []
-with open('input.txt', 'r') as file:
+with open(file_path, 'r') as file:
   for elements in file:
     datastr = elements.split()
     data.append(list(map(int, datastr)))

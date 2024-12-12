@@ -1,4 +1,9 @@
-with open('input.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(__file__)
+file_path = os.path.join(script_dir, "input.txt")
+
+with open(file_path, 'r') as file:
   lines = file.readlines()
 
 column1 = []

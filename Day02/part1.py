@@ -1,9 +1,13 @@
+import os
+
+script_dir = os.path.dirname(__file__)
+file_path = os.path.join(script_dir, "input.txt")
+
 data = []
 safes = 0
 unsafes = 0
 
-
-with open('input.txt', 'r') as file:
+with open(file_path, 'r') as file:
   for elements in file:
     datastr = elements.split()
     print(datastr)
