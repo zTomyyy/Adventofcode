@@ -21,6 +21,11 @@ for element in lines:
 rules = [list(map(int, item.split('|'))) for item in rules]
 pages = [list(map(int, item.split(','))) for item in pages]
 
+# ------------------------------------------------------------------------------
+
+pages
+rules
+
 def checkifrulevio(rule,pages):
   page_edited = []
   reversed_rule = []
